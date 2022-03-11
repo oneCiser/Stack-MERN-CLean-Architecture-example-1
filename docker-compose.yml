@@ -14,8 +14,8 @@ services:
      - mongodb
     ports:
      - "${BACKEND_PORT}:${BACKEND_PORT}"
-    volumes:
-      - ./backend:/backend
+    # volumes:
+    #   - ./backend:/backend
 
   redisdb:
     image: redis:5
