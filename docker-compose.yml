@@ -6,8 +6,9 @@ services:
      - MONGODB_URI=${MONGODB_URI}
      - JWT_SECRET=${JWT_SECRET}
      - JWT_AUTH_SECRET=${JWT_AUTH_SECRET}
-     - SESION_SECRET=${SESION_SECRET}
+     - SESSION_SECRET=${SESSION_SECRET}
      - REDIS_URL=${REDIS_URL}
+     - BACKEND_PORT=${BACKEND_PORT}
     depends_on:
      - redisdb
      - mongodb
