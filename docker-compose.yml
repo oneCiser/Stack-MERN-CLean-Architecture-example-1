@@ -1,0 +1,30 @@
+version: '3'
+services:
+  apirest:
+    build: ./backend
+    environment:
+     - MONGODB_URI=${MONGODB_URI}
+     - JWT_SECRET=${JWT_SECRET}
+     - JWT_AUTH_SECRET=${JWT_AUTH_SECRET}
+     - SESION_SECRET=${SESION_SECRET}
+     - REDIS_URL=${REDIS_URL}
+    depends_on:
+     - redisdb
+     - mongodb
+    ports:
+     - "${BACKEND_PORT}:${BACKEND_PORT}"
+    volumes:
+      - ./backend:/backend
+
+  redisdb:
+    image: redis:5
+    container_name: 'redis'
+    restart: 'always'
+  mongodb:
+    image: mongo
+    volumes:
+     - mongodata:/data/db
+    expose:
+     - "27017"
+volumes:
+  mongodata:
