@@ -21,7 +21,7 @@ services:
   frontend:
     build: ./frontend
     environment:
-     - BACKEND_URL=${BACKEND_URL}
+     - REACT_APP_BACKEND_URL=${BACKEND_URL}
     depends_on:
      - apirest
     ports:
