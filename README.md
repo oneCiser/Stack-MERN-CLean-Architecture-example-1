@@ -32,4 +32,4 @@ To run the projects individually you must have access to the following servers.
 Then you must run each container individually or each server within the project taking into account the example environment files within each project
 
 ## Architecture
-![Components diagram](https://raw.githubusercontent.com/oneCiser/Stack-MERN-CLean-Architecture-example-1/master/resources/architecture.svg)
+![Components diagram](https://raw.githubusercontent.com/oneCiser/Stack-MERN-CLean-Architecture-example-1/master/resources/architecture.png)
