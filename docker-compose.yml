@@ -2,6 +2,7 @@ version: '3'
 services:
   apirest:
     build: ./backend
+
     environment:
      - MONGODB_URI=${MONGODB_URI}
      - JWT_SECRET=${JWT_SECRET}
