@@ -1,3 +1,6 @@
 [submodule "backend"]
 	path = backend
 	url = https://github.com/oneCiser/Stack-MERN-CLean-Architecture-backend.git
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/oneCiser/Stack-MERN-CLean-Architecture-front-end.git
