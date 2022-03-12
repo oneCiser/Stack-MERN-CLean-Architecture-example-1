@@ -10,6 +10,7 @@ services:
      - SESSION_SECRET=${SESSION_SECRET}
      - REDIS_URL=${REDIS_URL}
      - PORT=${BACKEND_PORT}
+     - JWT_EXPIRES_IN=${JWT_EXPIRES_IN}
     depends_on:
      - redisdb
      - mongodb
@@ -28,5 +29,7 @@ services:
      - mongodata:/data/db
     expose:
      - "27017"
+    logging:
+      driver: none
 volumes:
   mongodata:
